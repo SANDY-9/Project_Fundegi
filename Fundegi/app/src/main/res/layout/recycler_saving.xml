@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    
+    <data>
+        <variable
+            name="saving"
+            type="co.kr.mapo.project_fundegi.data.InformSavingEntity" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        cardBackgroundColor="@{saving}"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_basic1"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="@dimen/margin_basic1"
+        android:layout_marginBottom="12dp"
+        android:background="?android:attr/selectableItemBackground"
+        tools:cardBackgroundColor="@color/backgroud_color"
+        app:cardCornerRadius="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_basic1">
+
+            <TextView
+                android:id="@+id/textView39"
+                savingName="@{saving.id}"
+                cardTextColor="@{saving}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                tools:text="저축" />
+
+
+            <TextView
+                android:id="@+id/textView41"
+                textForm_goal="@{saving.goal}"
+                cardTextColor="@{saving}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                tools:text="목표금액" />
+
+            <TextView
+                android:id="@+id/textView42"
+                textForm_money="@{saving.total}"
+                cardTextColor="@{saving}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:text="저축금액" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/button_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="?android:attr/selectableItemBackground"
+            app:srcCompat="@drawable/ic_round_close"
+            closeButtonColor="@{saving}"
+            tools:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center|end"
+            completeVisibility="@{saving.endDate}"
+            app:srcCompat="@drawable/complete" />
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

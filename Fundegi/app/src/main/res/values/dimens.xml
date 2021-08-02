@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_basic1">20dp</dimen>
+    <dimen name="margin_dialog">15dp</dimen>
+
+    <dimen name="pin_size">60dp</dimen>
+    <dimen name="pin_num_size">20dp</dimen>
+    <dimen name="pin_margin">7dp</dimen>
+
+    <dimen name="tab_size">4dp</dimen>
+
+    <!--size-->
+    <dimen name="size_0dp">0dp</dimen>
+    <dimen name="size_1dp">1dp</dimen>
+    <dimen name="size_2dp">2dp</dimen>
+    <dimen name="size_5dp">5dp</dimen>
+    <dimen name="size_30dp">30dp</dimen>
+    <dimen name="size_38dp">38dp</dimen>
+    <dimen name="size_40dp">40dp</dimen>
+    <dimen name="size_58dp">58dp</dimen>
+    <dimen name="size_76dp">76dp</dimen>
+    <dimen name="size_120dp">120dp</dimen>
+    <dimen name="size_132dp">132dp</dimen>
+    <dimen name="size_200dp">200dp</dimen>
+    <dimen name="size_280dp">280dp</dimen>
+    <dimen name="size_320dp">320dp</dimen>
+
+    <!--margin-->
+    <dimen name="margin_2dp">2dp</dimen>
+    <dimen name="margin_5dp">5dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="margin_15dp">15dp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="margin_22dp">22dp</dimen>
+    <dimen name="margin_24dp">24dp</dimen>
+    <dimen name="margin_28dp">28dp</dimen>
+    <dimen name="margin_30dp">30dp</dimen>
+    <dimen name="margin_34dp">34dp</dimen>
+    <dimen name="margin_40dp">40dp</dimen>
+    <dimen name="margin_44dp">44dp</dimen>
+    <dimen name="margin_48dp">48dp</dimen>
+    <dimen name="margin_50dp">50dp</dimen>
+    <dimen name="margin_60dp">60dp</dimen>
+    <dimen name="margin_70dp">70dp</dimen>
+    <dimen name="margin_90dp">90dp</dimen>
+    <dimen name="margin_145dp">145dp</dimen>
+    <dimen name="margin_214dp">214dp</dimen>
+
+    <!--padding-->
+    <dimen name="padding_30dp">30dp</dimen>
+
+    <!--text size-->
+    <dimen name="size_12sp">12sp</dimen>
+    <dimen name="size_15sp">15sp</dimen>
+    <dimen name="size_18sp">18sp</dimen>
+    <dimen name="size_20sp">20sp</dimen>
+    <dimen name="size_25sp">25sp</dimen>
+    <dimen name="size_30sp">30sp</dimen>
+    <dimen name="size_38sp">38sp</dimen>
+    <dimen name="size_47sp">47sp</dimen>
+
+
+    <dimen name="profile_size">100dp</dimen>
+</resources>

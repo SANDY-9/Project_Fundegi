@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- App Color -->
+    <color name="fundaegi_color1">#ebebeb</color>
+    <color name="fundaegi_color2">#606060</color>
+    <color name="fundeagi_first1">#4db6ac</color>
+    <color name="fundeagi_first2">#ffeb3b</color>
+    <color name="fundeagi_second1">#cddc39</color>
+    <color name="fundeagi_second2">#eb6940</color>
+    <color name="fundeagi_red">#fd5f2f</color>
+    <color name="register1">#606060</color>
+    <color name="register2">#c4c4c4</color>
+    <color name="clear_blue">#2557ff</color>
+
+    <color name="backgroud_color">#E5E5E5</color>
+    <color name="line_point_color">#2E2E2E</color>
+
+    <!--calendar-->
+    <color name="calendar_color">#A0A0A0</color>
+
+
+</resources>

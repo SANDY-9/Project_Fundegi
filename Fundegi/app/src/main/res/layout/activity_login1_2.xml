@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="pin"
+            type="co.kr.mapo.project_fundegi.ui.viewmodel.PinNumberViewModel" />
+        <variable
+            name="view"
+            type="android.view.View" />
+        <variable
+            name="owner"
+            type="co.kr.mapo.project_fundegi.ui.activity.login.LOGIN_1_2" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient"
+        tools:context=".ui.activity.login.LOGIN_1_2">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:onClick="@{()->owner.finish()}"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_round_arrow_back" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/pin_guid5"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/fundeagi_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pin_guid4"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="115dp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/pin_margin">
+
+                    <View
+                        android:id="@+id/view27"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/round"
+                        android:visibility="@{pin.pin_num1 != null ? view.VISIBLE : view.GONE}" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/pin_margin">
+
+                    <View
+                        android:id="@+id/view28"
+                        android:layout_width="@dimen/pin_num_size"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/round"
+                        android:visibility="@{pin.pin_num2 != null ? view.VISIBLE : view.GONE}" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/pin_margin">
+
+                    <View
+                        android:id="@+id/view29"
+                        android:layout_width="@dimen/pin_num_size"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/round"
+                        android:visibility="@{pin.pin_num3 != null ? view.VISIBLE : view.GONE}" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/pin_margin">
+
+                    <View
+                        android:id="@+id/view30"
+                        android:layout_width="@dimen/pin_num_size"
+                        android:layout_height="@dimen/pin_num_size"
+                        android:layout_gravity="center"
+                        android:background="@drawable/round"
+                        android:visibility="@{pin.pin_num4 != null ? view.VISIBLE : view.GONE}" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/pin_margin">
+
+                    <View
+                        android:id="@+id/view31"
+                        android:layout_width="@dimen/pin_num_size"
+                        android:layout_height="@dimen/pin_num_size"
+                        android:layout_gravity="center"
+                        android:background="@drawable/round"
+                        android:visibility="@{pin.pin_num5 != null ? view.VISIBLE : view.GONE}" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:id="@+id/view32"
+                        android:layout_width="@dimen/pin_num_size"
+                        android:layout_height="@dimen/pin_num_size"
+                        android:layout_gravity="center"
+                        android:background="@drawable/round"
+                        android:visibility="@{pin.pin_num6 != null ? view.VISIBLE : view.GONE}" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/pin_margin"
+                    android:background="@drawable/round" />
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/pin_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/round" />
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/pin_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/round" />
+
+                <View
+                    android:id="@+id/view6"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/pin_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/round" />
+
+                <View
+                    android:id="@+id/view7"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/pin_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/round" />
+
+                <View
+                    android:id="@+id/view8"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/round" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/displayButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            android:text="@string/pin_guide10"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout9" />
+
+        <TextView
+            android:id="@+id/pinNumber"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@{pin.pinNumber}"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/displayButton" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_basic1"
+            android:layout_marginEnd="@dimen/margin_basic1"
+            android:layout_marginBottom="@dimen/margin_basic1"
+            android:background="@drawable/round"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="40dp"
+                android:layout_height="6dp"
+                android:layout_gravity="center"
+                android:layout_margin="7dp"
+                android:background="@drawable/round"
+                android:backgroundTint="@color/fundeagi_second1" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+                <TextView
+                    android:id="@+id/number1"
+                    style="@style/pin_number"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:onClick="@{()->pin.inputPin(pin.numbers[1])}"
+                    android:text="@{pin.numbers[1]}"
+                    app:layout_constraintBottom_toTopOf="@+id/number6"
+                    app:layout_constraintEnd_toStartOf="@+id/number2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/number2"
+                    style="@style/pin_number"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:onClick="@{()->pin.inputPin(pin.numbers[2])}"
+                    android:text="@{pin.numbers[2]}"
+                    app:layout_constraintBottom_toTopOf="@+id/number7"
+                    app:layout_constraintEnd_toStartOf="@+id/number3"
+                    app:layout_constraintStart_toEndOf="@+id/number1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/number3"
+                    style="@style/pin_number"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:onClick="@{()->pin.inputPin(pin.numbers[3])}"
+                    android:text="@{pin.numbers[3]}"
+                    app:layout_constraintBottom_toTopOf="@+id/number8"
+                    app:layout_constraintEnd_toStartOf="@+id/number4"
+                    app:layout_constraintStart_toEndOf="@+id/number2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/number4"
+                    style="@style/pin_number"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:onClick="@{()->pin.inputPin(pin.numbers[4])}"
+                    android:text="@{pin.numbers[4]}"
+                    app:layout_constraintBottom_toTopOf="@+id/number9"
+                    app:layout_constraintEnd_toStartOf="@+id/number5"
+                    app:layout_constraintStart_toEndOf="@+id/number3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/number5"
+                    style="@style/pin_number"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:onClick="@{()->pin.inputPin(pin.numbers[5])}"
+                    android:text="@{pin.numbers[5]}"
+                    app:layout_constraintBottom_toTopOf="@+id/number10"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/number4"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/number6"
+                    style="@style/pin_number"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:onClick="@{()->pin.inputPin(pin.numbers[6])}"
+                    android:text="@{pin.numbers[6]}"
+                    app:layout_constraintBottom_toTopOf="@+id/remove"
+                    app:layout_constraintEnd_toStartOf="@+id/number7"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/number1" />
+
+                <TextView
+                    android:id="@+id/number7"
+                    style="@style/pin_number"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:onClick="@{()->pin.inputPin(pin.numbers[7])}"
+                    android:text="@{pin.numbers[7]}"
+                    app:layout_constraintBottom_toTopOf="@+id/textView13"
+                    app:layout_constraintEnd_toStartOf="@+id/number8"
+                    app:layout_constraintStart_toEndOf="@+id/number6"
+                    app:layout_constraintTop_toBottomOf="@+id/number2" />
+
+                <TextView
+                    android:id="@+id/number8"
+                    style="@style/pin_number"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_weight="0"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:onClick="@{()->pin.inputPin(pin.numbers[8])}"
+                    android:text="@{pin.numbers[8]}"
+                    app:layout_constraintBottom_toTopOf="@+id/number11"
+                    app:layout_constraintEnd_toStartOf="@+id/number9"
+                    app:layout_constraintStart_toEndOf="@+id/number7"
+                    app:layout_constraintTop_toBottomOf="@+id/number3" />
+
+                <TextView
+                    android:id="@+id/number9"
+                    style="@style/pin_number"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:onClick="@{()->pin.inputPin(pin.numbers[9])}"
+                    android:text="@{pin.numbers[9]}"
+                    app:layout_constraintBottom_toTopOf="@+id/textView31"
+                    app:layout_constraintEnd_toStartOf="@+id/number10"
+                    app:layout_constraintStart_toEndOf="@+id/number8"
+                    app:layout_constraintTop_toBottomOf="@+id/number4" />
+
+                <TextView
+                    android:id="@+id/number10"
+                    style="@style/pin_number"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:onClick="@{()->pin.inputPin(pin.numbers[0])}"
+                    android:text="@{pin.numbers[0]}"
+                    app:layout_constraintBottom_toTopOf="@+id/save"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/number9"
+                    app:layout_constraintTop_toBottomOf="@+id/number5" />
+
+                <TextView
+                    android:id="@+id/number11"
+                    style="@style/pin_number"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/textView31"
+                    app:layout_constraintStart_toEndOf="@+id/textView13"
+                    app:layout_constraintTop_toBottomOf="@+id/number8" />
+
+                <TextView
+                    android:id="@+id/remove"
+                    style="@style/pin_number"
+                    android:layout_width="@dimen/pin_size"
+                    android:layout_height="60dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:onClick="@{()->pin.removePin()}"
+                    android:paddingBottom="10dp"
+                    android:text="←"
+                    android:textSize="30dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/textView13"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/number6" />
+
+                <TextView
+                    android:id="@+id/save"
+                    style="@style/pin_number"
+                    android:layout_width="@dimen/pin_size"
+                    android:layout_height="60dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:onClick="@{()->owner.showDialog()}"
+                    android:text="@string/pin_guid6"
+                    android:textSize="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView31"
+                    app:layout_constraintTop_toBottomOf="@+id/number10" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/number11"
+                    app:layout_constraintStart_toEndOf="@+id/remove"
+                    app:layout_constraintTop_toBottomOf="@+id/number7" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/save"
+                    app:layout_constraintStart_toEndOf="@+id/number11"
+                    app:layout_constraintTop_toBottomOf="@+id/number9" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="56dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.CalendarFragment">
+
+
+    <TextView
+        android:id="@+id/calendar_year_month_text"
+        style="@style/calendar_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:layout_marginBottom="@dimen/margin_5dp"
+        android:text="@string/ym_text"
+        android:textAlignment="center" />
+
+    <View
+        android:id="@+id/div"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/calendar_color" />
+
+    <LinearLayout
+        android:id="@+id/calendar_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_30dp"
+        android:layout_marginTop="@dimen/margin_2dp"
+        android:layout_marginBottom="@dimen/margin_2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            style="@style/calendar_text2"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/SUN"
+            android:textAlignment="center" />
+
+        <TextView
+            style="@style/calendar_text2"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/MON"
+            android:textAlignment="center" />
+
+        <TextView
+            style="@style/calendar_text2"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/TUE"
+            android:textAlignment="center" />
+
+        <TextView
+            style="@style/calendar_text2"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/WED"
+            android:textAlignment="center" />
+
+        <TextView
+            style="@style/calendar_text2"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/THU"
+            android:textAlignment="center" />
+
+        <TextView
+            style="@style/calendar_text2"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/FRI"
+            android:textAlignment="center" />
+
+        <TextView
+            style="@style/calendar_text2"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/SAT"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1dp"
+        android:layout_marginBottom="@dimen/margin_5dp"
+        android:background="@color/calendar_color" />
+
+    <LinearLayout
+        android:id="@+id/calendar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/calendar_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constrainedHeight="true"
+            app:spanCount="7"
+            tools:listitem="@layout/item_calendar_list" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fundeagi_first1"
+        tools:context=".ui.activity.login.LOGIN_1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/gif"
+                gif="@{2131689475}"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@null" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_jalnan"
+                android:gravity="center"
+                android:letterSpacing="0.15"
+                android:text="FUNDEGI"
+                android:textColor="@color/fundaegi_color1"
+                android:textSize="40dp" />
+
+            <Button
+                android:id="@+id/button"
+                style="@style/fundeagi_text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="80dp"
+                android:background="@drawable/round"
+                android:bufferType="spannable"
+                android:gravity="center"
+                android:onClick="goNext"
+                android:padding="10dp"
+                justAccountText="@{true}"
+                android:text="@string/just_start" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

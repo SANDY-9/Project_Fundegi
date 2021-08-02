@@ -1,0 +1,129 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Project_Fundegi" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/fundeagi_first2</item>
+        <item name="colorPrimaryVariant">@color/fundeagi_first1</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@color/fundaegi_color2</item>
+    </style>
+
+    <!-- Tab Style -->
+    <style name="TabLayout.ItemStyle" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabMode">fixed</item>
+        <item name="tabIndicatorGravity">bottom</item>
+        <item name="tabIndicatorHeight">@dimen/tab_size</item>
+        <item name="tabIndicatorFullWidth">false</item>
+        <item name="tabIndicatorColor">@color/fundeagi_first2</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="tabTextColor">@color/white</item>
+        <item name="tabBackground">@color/fundeagi_first1</item>
+        <item name="tabTextAppearance">@style/Tab.TextStyle</item>
+    </style>
+
+    <!-- TabItem Text Style -->
+    <style name="Tab.TextStyle" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textSize">@dimen/size_15sp</item>
+        <item name="android:fontFamily">@font/font_roboto</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:splitMotionEvents">false</item>
+    </style>
+
+    <style name="fundeagi_text1">
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="fundeagi_text2">
+        <item name="android:textSize">15dp</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="fundeagi_text3">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/fundaegi_color2</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+
+    <style name="pin_number">
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/font_roboto</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:textColor">@color/fundeagi_first1</item>
+    </style>
+
+    <style name="text_saving1">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="text_saving2">
+        <item name="android:textColor">@color/fundaegi_color2</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!--main-->
+    <style name="theme_textStyle">
+        <item name="fontFamily">@font/font_roboto</item>
+        <item name="android:textSize">@dimen/size_15sp</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="logo_font">
+        <item name="fontFamily">@font/font_jalnan</item>
+        <item name="android:letterSpacing">0.15</item>
+        <item name="android:textColor">@color/fundaegi_color1</item>
+        <item name="android:textSize">@dimen/size_20sp</item>
+    </style>
+
+
+    <!--calrendar-->
+    <style name="calendar_text1">
+        <item name="fontFamily">@font/robotobold</item>
+        <item name="android:textSize">@dimen/size_20sp</item>
+        <item name="android:textColor">@color/fundaegi_color2</item>
+    </style>
+
+    <style name="calendar_text2">
+        <item name="fontFamily">@font/font_roboto</item>
+        <item name="android:textSize">@dimen/size_12sp</item>
+        <item name="android:textColor">@color/register1</item>
+    </style>
+
+    <style name="calendar_text3">
+        <item name="fontFamily">@font/font_roboto</item>
+        <item name="android:textSize">@dimen/size_12sp</item>
+        <item name="android:textColor">@color/register2</item>
+    </style>
+
+
+    <!--progress_rule-->
+    <style name="rule_text">
+        <item name="fontFamily">@font/font_roboto</item>
+        <item name="android:textSize">@dimen/size_15sp</item>
+        <item name="android:textColor">@color/register1</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="rule_text2">
+        <item name="fontFamily">@font/font_roboto</item>
+        <item name="android:textSize">@dimen/size_20sp</item>
+        <item name="android:textColor">@color/register1</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+</resources>

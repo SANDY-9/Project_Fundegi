@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="saving"
+            type="co.kr.mapo.project_fundegi.ui.viewmodel.SavingViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fundeagi_first1"
+        tools:context=".ui.activity.MAIN_">
+
+
+        <LinearLayout
+            android:id="@+id/main_top"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ic_coin"
+                android:layout_width="@dimen/size_30dp"
+                android:layout_height="@dimen/size_30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_20dp"
+                android:layout_marginEnd="@dimen/margin_5dp"
+                app:srcCompat="@drawable/coin_illust" />
+
+            <TextView
+                android:id="@+id/logo_text"
+                style="@style/logo_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin_5dp"
+                android:text="@string/fundegi"
+                android:textColor="@color/white" />
+
+            <View
+                android:layout_width="@dimen/size_0dp"
+                android:layout_height="@dimen/size_0dp"
+                android:layout_weight="1"></View>
+
+            <ImageButton
+                android:id="@+id/myPage_btn"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_20dp"
+                android:layout_marginEnd="15dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:contentDescription="@string/my_page_description"
+                android:focusable="true"
+                android:onClick="myPageButton"
+                app:srcCompat="@drawable/ic_my_page_button"
+                app:tint="@color/white" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="56dp" />
+
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/main_top">
+
+            <RelativeLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="MissingClass">
+
+                <LinearLayout
+                    android:id="@+id/total_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_30dp"
+                    android:layout_marginEnd="@dimen/margin_30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_10dp"
+                        android:layout_marginEnd="@dimen/margin_10dp"
+                        android:fontFamily="@font/font_roboto"
+                        android:text="@string/total"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_25sp" />
+
+                    <TextView
+                        android:id="@+id/total_price_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/font_roboto"
+                        android:text="@{saving.totalSavingMoney}"
+                        android:textColor="@color/white"
+                        android:textSize="45sp"
+                        tools:text="50" />
+
+                    <TextView
+                        android:id="@+id/won_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_5dp"
+                        android:layout_marginEnd="@dimen/margin_5dp"
+                        android:fontFamily="@font/font_roboto"
+                        android:text="@string/won"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_25sp" />
+
+                </LinearLayout>
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/total_price"
+                    android:layout_marginTop="5dp"
+                    android:clipChildren="false"
+                    android:clipToPadding="false">
+
+                </androidx.viewpager2.widget.ViewPager2>
+
+                <me.relex.circleindicator.CircleIndicator3
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_30dp"
+                    android:layout_below="@id/pager"
+                    app:ci_drawable="@drawable/ic_indicator_selected"
+                    app:ci_drawable_unselected="@drawable/ic_indicator_unselected"
+                    app:ci_height="@dimen/size_5dp"
+                    app:ci_width="@dimen/size_5dp" />
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayout"
+                    style="@style/TabLayout.ItemStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/indicator"
+                    android:layout_marginLeft="@dimen/margin_40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/margin_40dp">
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tab_health" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tab_good_life" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tab_self_developement" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tab_365" />
+
+                </com.google.android.material.tabs.TabLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/btn_linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tabLayout"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_theme"
+                        style="@style/theme_textStyle"
+                        android:layout_width="90dp"
+                        android:layout_height="@dimen/size_38dp"
+                        android:layout_marginStart="@dimen/margin_30dp"
+                        android:background="@drawable/round_top"
+                        android:backgroundTint="@color/fundeagi_second1"
+                        android:elevation="2dp"
+                        android:minWidth="0dp"
+                        android:minHeight="0dp"
+                        android:text="@string/theme_diet" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/label_first"
+                        style="@style/theme_textStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/round_top"
+                        android:backgroundTint="@color/backgroud_color"
+                        android:elevation="2dp"
+                        android:minWidth="0dp"
+                        android:minHeight="0dp"
+                        android:paddingStart="25dp"
+                        android:paddingEnd="25dp"
+                        android:text="운동" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/label_second"
+                        style="@style/theme_textStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/round_top"
+                        android:backgroundTint="@color/backgroud_color"
+                        android:elevation="2dp"
+                        android:minWidth="0dp"
+                        android:minHeight="0dp"
+                        android:paddingStart="25dp"
+                        android:paddingEnd="25dp"
+                        android:text="커피" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ImageButton
+                        android:id="@+id/btn_question"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center|end"
+                        android:layout_marginEnd="@dimen/margin_30dp"
+                        android:layout_marginBottom="3dp"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:contentDescription="@string/question_mark"
+                        android:padding="3dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/ic_round_help_24"
+                        app:tint="@color/fundeagi_first2" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/contents"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/btn_linearLayout"
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:layout_marginRight="@dimen/margin_20dp"
+                    android:layout_marginBottom="@dimen/margin_20dp"
+                    android:background="@drawable/round">
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+</layout>

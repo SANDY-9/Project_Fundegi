@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="co.kr.mapo.project_fundegi">
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:name=".system.Fundegi"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Project_Fundegi"
+        android:usesCleartextTraffic="true"
+        >
+        <activity android:name=".ui.activity.register.REGISTER_CARD_3"/>
+        <activity android:name=".ui.activity.register.REGISTER_CARD_2"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+        <activity android:name=".ui.activity.register.REGISTER_CARD_1" />
+        <activity android:name=".ui.activity.register.REGISTER_daily" />
+        <activity android:name=".ui.activity.register.REGISTER_study" />
+        <activity android:name=".ui.activity.register.REGISTER_wakeup" />
+        <activity android:name=".ui.activity.register.REGISTER_diet" />
+        <activity android:name=".ui.activity.my.MY_manage" />
+        <activity android:name=".ui.activity.my.MY_" />
+        <activity android:name=".ui.activity.THEME_study_watch" />
+        <activity android:name=".ui.activity.login.LOGIN_1_3" />
+        <activity android:name=".ui.activity.login.LOGIN_1_2" />
+        <activity android:name=".ui.activity.login.LOGIN_1_1" />
+        <activity android:name=".ui.activity.login.LOGIN_1"/>
+        <activity android:name=".ui.activity.PIN_" />
+        <activity android:name=".ui.activity.SPLASH_">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.MAIN_"/>
+
+        <service
+            android:name=".ui.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="ocr" />
+
+
+    </application>
+
+
+
+</manifest>

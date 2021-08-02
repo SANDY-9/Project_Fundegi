@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round"
+        android:elevation="3dp"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/margin_10dp"
+        android:paddingTop="@dimen/margin_10dp"
+        android:paddingEnd="@dimen/margin_10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공부 시간은"
+                android:textColor="@color/fundaegi_color2"
+                android:textSize="@dimen/size_15sp" />
+
+            <TextView
+                android:id="@+id/dialog_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="00:00:00"
+                android:textColor="@color/fundaegi_color2"
+                android:textSize="@dimen/size_15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="입니다."
+                android:textColor="@color/fundaegi_color2"
+                android:textSize="@dimen/size_15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="종료 하시겠습니까?"
+            android:textAlignment="center"
+            android:textColor="@color/fundaegi_color2"
+            android:textSize="@dimen/size_15sp" />
+
+        <View
+            android:id="@+id/view9"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/fundaegi_color1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_no"
+                style="@style/fundeagi_text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="@string/dialog_n"
+                android:textAlignment="center"
+                android:textColor="@color/fundeagi_first1"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tv_yes"
+                style="@style/fundeagi_text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="@string/dialog_y"
+                android:textAlignment="center"
+                android:textColor="@color/fundeagi_first1"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

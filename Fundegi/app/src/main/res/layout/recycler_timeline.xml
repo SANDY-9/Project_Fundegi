@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="saving"
+            type="co.kr.mapo.project_fundegi.data.SavingEntity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/margin_34dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+            <!-- 타임라인 이미지 -->
+            <ImageView
+                android:id="@+id/iv_pipeline"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:layout_gravity="left"
+                android:src="@drawable/timeline" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_saving"
+                    timeLineText="@{saving.money}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/robotomedium"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_date"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="금액" />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/robotomedium"
+                    android:text="@{saving.date.substring(0, 10)}"
+                    android:textColor="@color/calendar_color"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="날짜" />
+
+                <TextView
+                    android:id="@+id/tv_study_record"
+                    studyTimeVisiblity="@{saving.id}"
+                    timeLineStudyTime="@{saving.studyTime}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/robotomedium"
+                    android:textColor="@color/calendar_color"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_saving"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_saving"
+                    tools:text="공부시간" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

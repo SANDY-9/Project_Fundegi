@@ -1,0 +1,122 @@
+<resources>
+    <string name="app_name">펀데기</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- LOGIN -->
+    <string name="just_start">JUST 계정으로 시작하기</string>
+    <string name="just_login1">아이디/비밀번호 찾기</string>
+    <string name="just_login2">JUST 계정이 없어요!</string>
+
+    <!-- PIN -->
+    <string name="pin_guid1">등록하신 PIN 번호 6자리를 입력해주세요.</string>
+    <string name="pin_guid2">혹시 PIN 번호를 잊어버리셨나요?</string>
+    <string name="pin_guid3">재배열</string>
+    <string name="pin_guid4">PIN 번호 6자리를 입력해주세요.</string>
+    <string name="pin_guid5">PIN 번호 등록</string>
+    <string name="pin_guid6">저장</string>
+    <string name="pin_guid7">입력하신 PIN 번호는</string>
+    <string name="pin_guid8">해당 PIN 번호로 저장 하시겠습니까?</string>
+    <string name="pin_guid9">PIN 번호 확인</string>
+    <string name="pin_guide10"><u>PIN 번호 보기</u></string>
+
+    <!-- 다이어로그 -->
+    <string name="dialog_y">예</string>
+    <string name="dialog_n">아니오</string>
+    <string name="dialog_c">확인</string>
+    <string name="dialog_logout">로그아웃 하시겠습니까?</string>
+
+    <!-- register -->
+    <string name="register1">다이어트 저축 시작하기</string>
+    <string name="register_card">신용카드 또는 체크카드 등록</string>
+    <string name="register_card_guid">사각형 안에 카드를 맞춰 주세요.</string>
+    <string name="register_card_allow1">서비스 이용 약관 동의(필수)</string>
+    <string name="register_card_allow2">개인(신용)정보의 제 3자 제공 동의(필수)</string>
+    <string name="register_card_allow3">개인(신용)정보 수집, 이용 동의(필수)</string>
+    <string name="register_card_allow4">개인 (신용)정보 처리 위탁 동의(필수)</string>
+    <string name="register_card_allow5">마케팅 정보 수신 동의(선택)</string>
+    <string name="register2">얼리버드 저축 시작하기</string>
+    <string name="register3">공부 저축 시작하기</string>
+    <string name="register4">데일리 저축 시작하기</string>
+    <string name="register_hint"><font size="15">터치하여 기입하기</font></string>
+    <string name="register_hint2">nnnn-nnnn-nnnn-nnnn</string>
+    <string name="register_hint3">MM/YY</string>
+    <string name="register_hint4">카드 뒷면 숫자 3자리</string>
+    <string name="register_hint5">카드 비밀번호를 입력해주세요.</string>
+    <string name="register_hint6"><font size="15">금액 입력하기</font></string>
+
+    <!--규칙 설명 -->
+    <string name="diet_title">다이어트 저축</string>
+    <string name="diet_content">하루동안 외식·배달 내역이 없을 때,\n내가 설정한 금액이 저축됩니다.</string>
+    <string name="diet_desc">통통한 펀데기에서 날씬한 나비가 되어보아요!</string>
+    <string name="wakeup_title">얼리버드 저축</string>
+    <string name="wakeup_content">하루에 한번씩 얼리버드 아이콘을 누르면\n설정한 금액이 저축됩니다.</string>
+    <string name="wakeup_desc">일찍 일어나는 펀데기가 나비가 된다.</string>
+    <string name="study_title">공부 저축</string>
+    <string name="study_content">스톱워치로 측정된 시간이 1시간 이상이면\n설정한 금액이 저축됩니다.</string>
+    <string name="study_desc">펀데기. 변태학과 석사과정 밟는 중.</string>
+    <string name="daily_title">데일리 저축</string>
+    <string name="daily_content">매일 오늘 날짜의 금액을 저축합니다.\n예) 7월 30일 → 730원 저축</string>
+    <string name="daily_desc">데기는 뚠뚠, 오늘도 뚠뚠, 열심히 저축을 하네~</string>
+
+    <!--description-->
+    <string name="question_mark">도움말 버튼 이미지</string>
+    <string name="my_page_description">마이페이지 버튼 이미지</string>
+    <string name="no_acount_description">펀데기 이미지 로딩 실패</string>
+    <string name="saving_start">저축 시작하기</string>
+
+    <!-- MYPAGE 메뉴 -->
+    <string name="menu_title1">내 저축\n관리</string>
+    <string name="menu_title2">출금 계좌\n관리</string>
+    <string name="menu_title3">이용 약관\n및\n서비스 정책</string>
+    <string name="menu_title4">PIN 번호\n재설정</string>
+    <string name="menu_title5"><u>로그아웃</u></string>
+
+    <!--메인-->
+    <string name="no_acount_coment">앗, 저축을 아직 시작하지 않으셨군요!</string>
+    <string name="fundegi">FUNDEGI</string>
+    <string name="empty_item">현재 진행중인 저축이 없습니다.</string>
+
+    <!--Tab-->
+    <string name="tab_health">건강</string>
+    <string name="tab_good_life">바른생활</string>
+    <string name="tab_self_developement">자기개발</string>
+    <string name="tab_365">365</string>
+    <string name="theme_diet">다이어트</string>
+    <string name="theme_earlyBird">얼리버드</string>
+    <string name="theme_study">공부하기</string>
+    <string name="theme_daily">데일리</string>
+    <string name="total">총</string>
+    <string name="won">원</string>
+
+    <!--저축 시작하기-->
+    <string name="set_price">설정 금액</string>
+    <string name="goal_price">목표 금액</string>
+    <string name="start">시작하기</string>
+    <string name="back_btn_description">뒤로가기 버튼이미지</string>
+
+    <string name="saving_price">저축 금액</string>
+
+    <!--calendar-->
+    <string name="SUN">일</string>
+    <string name="MON">월</string>
+    <string name="TUE">화</string>
+    <string name="WED">수</string>
+    <string name="THU">목</string>
+    <string name="FRI">금</string>
+    <string name="SAT">토</string>
+    <string name="calendar_format">yyyy년 MM월</string>
+    <string name="ym_text">2021년 07월</string>
+    <string name="firebase_notification_channel_id">CHANNEL _ID</string>
+
+    <!--설정 금액-->
+    <string name="register_diet">외식 및 배달앱 사용 내역이 없으면 입력한 금액이 저축됩니다.</string>
+    <string name="register_early">일찍 일어나 버튼을 누르면 입력한 금액이 저축됩니다.</string>
+    <string name="register_study">한시간 이상 공부하면 입력한 금액만큼 저축됩니다.</string>
+    <string name="register_daily"></string>
+
+    <string name="tip_diet">하루동안 외식·배달 내역이 없을 때,\n내가 설정한 금액이 저축됩니다.</string>
+    <string name="tip_early">하루에 한번씩 얼리버드 아이콘을 누르면\n설정한 금액이 저축됩니다.</string>
+    <string name="tip_study">스톱워치로 측정된 시간이 1시간 이상이면\n설정한 금액이 저축됩니다.</string>
+    <string name="tip_daily">매일 오늘 날짜의 금액을 저축합니다.\n예) 7월 30일 → 730원 저축</string>
+</resources>
